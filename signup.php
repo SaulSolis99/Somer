@@ -11,10 +11,10 @@ if(isset($_POST['registra'])){
 		$ccontra = $_POST['ccontraseña'];
 		$fecha_nac = $_POST['fecha_nac'];
 		$edad = $_POST['edad'];
-		
-		$tiempo = strtotime($fecha_nac); 
-    $ahora = time(); 
-    $edad1 = ($ahora-$tiempo)/(60*60*24*365.25); 
+
+		$tiempo = strtotime($fecha_nac);
+    $ahora = time();
+    $edad1 = ($ahora-$tiempo)/(60*60*24*365.25);
     $edad1 = floor($edad1);
 
 		if($edad >= 18 && $edad == $edad1){
@@ -56,20 +56,27 @@ if(isset($_POST['registra'])){
      <div class="login-container">
        <div class="register">
          <h2>Registrarse</h2>
-         <?php if(!empty($message)): ?>
-      <p> <?= $message ?></p>
-    <?php endif; ?>
          <form action="signup.php" method="POST">
-           <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="nombre">
+					 <input type="text" name="cuenta" placeholder="Ingresa tu cuenta" class="cuenta">
+           <input type="text" name="nombre" placeholder="Ingresa tu nombre(s)" class="nombre">
+					 <input type="text" name="apemat" value="Ingresa tu apellido materno" class="apemat">
+					 <input type="text" name="apepat" value="Ingresta tu apellido paterno" class="apepat">
+					 <input type="numberfield" name="telefono" value="Ingresa numero telefonico" class="telefono">
            <input type="text" name="correo" placeholder="Ingresa tu correo" class="correo">
+					 <input type="date" id="bday" name="fecha_nac" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="Fecha de Nacimiento">
+					 <input type="text" name="edad" placeholder="Ingresa tu edad">
+					 <input type="text" name="direccion" value="Ingresa tu direccion" class="direccion">
+					 <input type="numberfield" name="codigopostal" value="Ingresa tu codigo postal" class="cp">
+					 <input type="text" name="localidad" value="Ingresa tu localidad" class="localidad">
+					 <input type="text" name="provincia" value="Ingresa tu provincia" class="provincia">
+					 <input type="text" name="pais" value="Ingresa tu pais" class="pais">
+					 <input type="image" name="foto" value="ingresa una foto para tu perfil" class="imagen">
            <input type="password" name="contraseña" placeholder="Ingresa contraseña" class="pass">
            <input type="password" name="ccontraseña" placeholder="Confirma contraseña" class="repass">
-           <input type="date" id="bday" name="fecha_nac" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="Fecha de Nacimiento">
-           <input type="text" name="edad" placeholder="Ingresa tu edad">
            <input type="submit" name="registra" class="submit" value="REGISTRARSE"><br>
              <a href="login.php"> ¿Ya estas registrado? Inicia sesion aqui</a>
          </form>
-       </div>  
+       </div>
        </div>
      </div>
 <footer>
