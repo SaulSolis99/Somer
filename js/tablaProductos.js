@@ -1,26 +1,23 @@
-/*
-tablaAlumnos.js
-Pinta la tabla de Alumnos con la opción de crear nuevos
-*/
+
 Ext.require([
     'Ext.plugin.Viewport'
 ]);
 var nLinActual = -1;
 Ext.onReady(function(){
 	//Define "clase" Alumno
-    Ext.define('Alumno', {
+    Ext.define('Producto', {
 		extend: 'Ext.data.Model',
-		fields: ['id', 'nombre', 'apePat', 'apeMat', 'nnumcontrol', 'ncvecarrera','nsemestre','pwd']
+		fields: ['modelo', 'linea', 'estilo', 'plantilla', 'suela', 'corte','montado','casquillo', 'color', 'precio', 'imagen']
 	});
-	
+
 	//Define almacenamiento de Alumno proveniente de PHP y usado en la tabla (grid)
 	Ext.create('Ext.data.Store', {
 		extend: 'Ext.data.Store',
-		storeId: 'Alumnos',
-		model: 'Alumno',
+		storeId: 'Producto',
+		model: 'Producto',
 		autoLoad: true, //se carga al definirse
 		autoSync: true,    //para ABC autónomo
-		
+
 		proxy: {
 			type: 'ajax',
 			actionMethods: {
@@ -29,7 +26,7 @@ Ext.onReady(function(){
 			},
 			batchActions: false,
 			api: {
-				read: 'buscaTodosAlumno.php',
+				read: 'buscaTodosProductos.php',
 				update: 'resABCAlumno.php?txtOpe=m',
 				destroy: 'resABCAlumno.php?txtOpe=b'
 			},
@@ -50,7 +47,7 @@ Ext.onReady(function(){
 			}
 		}
 	});
-	
+
 	//Define tabla que usa almacenamiento proveniente de PHP
 	Ext.create('Ext.grid.Panel', {
 		renderTo: Ext.get("espacio1"),
@@ -119,7 +116,7 @@ Ext.onReady(function(){
 					xtype: 'numberfield',
 					allowBlank: false
 				}
-			
+
 			},{
 				text: 'Semestre',
 				width: '10%',
