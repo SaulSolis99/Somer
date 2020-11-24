@@ -48,8 +48,8 @@ if(isset($_POST['inicia'])){
            <input type="text" name="correo" placeholder="Ingresa correo" class="correo">
            <input type="password" name="contraseña" placeholder="Ingresa contraseña" class="pass">
            <input type="submit" name="inicia" class="submit" value="INICIAR SESIÓN"><br>
-           <a href="signup.php"> Registrate aquí</a>
-           <p>¡Olvidaste la contraseña? <a href="recuperar.php"> Recuperala aquí</a> </p>
+           <a href="signup.php"> Registrate aquí</a><br>
+           <a href="recuperar.php">¡Olvidaste la contraseña?  Recuperala aquí</a>
          </form>
        </div>
        </div>

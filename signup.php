@@ -4,7 +4,8 @@ include("conexion.php");
 if(isset($_POST['registra'])){
 
 	if(!empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['contraseña']) && !empty($_POST['ccontraseña']) && !empty($_POST['fecha_nac']) && !empty($_POST['edad']) && !empty($_POST['cuenta'])
-&& !empty(['apemat']) && !empty(['apepat']) && !empty(['telefono']) && !empty(['direccion']) && !empty(['codigopostal']) && !empty(['localidad']) && !empty(['provincia']) && !empty(['pais'])){
+&& !empty(['apemat']) && !empty(['apepat']) && !empty(['telefono']) && !empty(['direccion']) && !empty(['codigopostal']) && !empty(['localidad']) && !empty(['provincia']) && !empty(['pais'])
+&& !empty(['foto'])){
 
 		$nombre = $_POST['nombre'];
 		$cuenta = $_POST['cuenta'];
@@ -61,6 +62,7 @@ if(isset($_POST['registra'])){
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="Imagenes/somer.ico" />
   <title> Registrarse</title>
+
 </head>
 <body>
 	<header> <a href="index.php">CALZADO SOLIS</a></header>
@@ -71,8 +73,8 @@ if(isset($_POST['registra'])){
          <form action="signup.php" method="POST">
 					 <input type="text" name="cuenta" placeholder="Ingresa tu cuenta" class="cuenta">
            <input type="text" name="nombre" placeholder="Ingresa tu nombre(s)" class="nombre">
-					 <input type="text" name="apemat" placeholder="Ingresa tu apellido materno" class="apemat">
-					 <input type="text" name="apepat" placeholder="Ingresta tu apellido paterno" class="apepat">
+					 <input type="text" name="apepat" placeholder="Ingresa tu apellido paterno" class="apepat">
+					 <input type="text" name="apemat" placeholder="Ingresta tu apellido materno" class="apemat">
 					 <input type="numberfield" name="telefono" placeholder="Ingresa numero telefonico" class="telefono">
            <input type="text" name="correo" placeholder="Ingresa tu correo" class="correo">
 					 <input type="date" id="bday" name="fecha_nac" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="Fecha de Nacimiento">
