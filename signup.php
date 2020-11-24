@@ -3,9 +3,20 @@ include("conexion.php");
 
 if(isset($_POST['registra'])){
 
-	if(!empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['contraseña']) && !empty($_POST['ccontraseña']) && !empty($_POST['fecha_nac']) && !empty($_POST['edad'])){
+	if(!empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['contraseña']) && !empty($_POST['ccontraseña']) && !empty($_POST['fecha_nac']) && !empty($_POST['edad']) && !empty($_POST['cuenta'])
+&& !empty(['apemat']) && !empty(['apepat']) && !empty(['telefono']) && !empty(['direccion']) && !empty(['codigopostal']) && !empty(['localidad']) && !empty(['provincia']) && !empty(['pais'])){
 
 		$nombre = $_POST['nombre'];
+		$cuenta = $_POST['cuenta'];
+		$apemat = $_POST['apemat'];
+		$apepat = $_POST['apepat'];
+		$tel = $_POST['telefono'];
+		$dir = $_POST['direccion'];
+		$cp = $_POST['codigopostal'];
+		$loc = $_POST['localidad'];
+		$prov = $_POST['provincia'];
+		$pais = $_POST['pais'];
+		$foto = $_POST['foto'];
 		$correo = $_POST['correo'];
 		$contra = $_POST['contraseña'];
 		$ccontra = $_POST['ccontraseña'];
@@ -19,7 +30,8 @@ if(isset($_POST['registra'])){
 
 		if($edad >= 18 && $edad == $edad1){
 			if($contra == $ccontra){
-					$consulta = "INSERT INTO usuario(nombre, correo, contraseña, fecha_nac, edad) VALUES ('$nombre','$correo','$contra','$fecha_nac', '$edad')";
+					$consulta = "INSERT INTO `usuario`(`Cuenta`, `Contraseña`, `Tipo`, `Nombres`, `ApellidoMat`, `ApellidoPat`, `Telefono`, `CorreoElectronico`, `Edad`, `FechaNacimiento`, `Direccion`, `CodigoPostal`, `Localidad`, `Provincia`, `Pais`, `Pedidos_Folio`, `ImagenUsu`)
+					 VALUES ($cuenta , $contra ,`User`,$nombre, $apemat, $apepat, $tel, $correo , $edad, $fecha_nac, $dir, $cp, $loc, $prov, $pais,``,$foto)";
 					$resultado = mysqli_query($conex, $consulta);
 				if($resultado){
 						echo '<script language="javascript">alert("Usuario registrado exitosamente");</script>';
