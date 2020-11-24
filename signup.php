@@ -71,18 +71,18 @@ if(isset($_POST['registra'])){
          <form action="signup.php" method="POST">
 					 <input type="text" name="cuenta" placeholder="Ingresa tu cuenta" class="cuenta">
            <input type="text" name="nombre" placeholder="Ingresa tu nombre(s)" class="nombre">
-					 <input type="text" name="apemat" value="Ingresa tu apellido materno" class="apemat">
-					 <input type="text" name="apepat" value="Ingresta tu apellido paterno" class="apepat">
-					 <input type="numberfield" name="telefono" value="Ingresa numero telefonico" class="telefono">
+					 <input type="text" name="apemat" placeholder="Ingresa tu apellido materno" class="apemat">
+					 <input type="text" name="apepat" placeholder="Ingresta tu apellido paterno" class="apepat">
+					 <input type="numberfield" name="telefono" placeholder="Ingresa numero telefonico" class="telefono">
            <input type="text" name="correo" placeholder="Ingresa tu correo" class="correo">
 					 <input type="date" id="bday" name="fecha_nac" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="Fecha de Nacimiento">
 					 <input type="text" name="edad" placeholder="Ingresa tu edad">
-					 <input type="text" name="direccion" value="Ingresa tu direccion" class="direccion">
-					 <input type="numberfield" name="codigopostal" value="Ingresa tu codigo postal" class="cp">
-					 <input type="text" name="localidad" value="Ingresa tu localidad" class="localidad">
-					 <input type="text" name="provincia" value="Ingresa tu provincia" class="provincia">
-					 <input type="text" name="pais" value="Ingresa tu pais" class="pais">
-					 <input type="image" name="foto" value="ingresa una foto para tu perfil" class="imagen">
+					 <input type="text" name="direccion" placeholder="Ingresa tu direccion" class="direccion">
+					 <input type="numberfield" name="codigopostal" placeholder="Ingresa tu codigo postal" class="cp">
+					 <input type="text" name="localidad" placeholder="Ingresa tu localidad" class="localidad">
+					 <input type="text" name="provincia" placeholder="Ingresa tu provincia" class="provincia">
+					 <input type="text" name="pais" placeholder="Ingresa tu pais" class="pais">
+					 <input type="submit" name="foto" placeholder="Ingresa una foto para tu perfil" class="imagen">
            <input type="password" name="contraseña" placeholder="Ingresa contraseña" class="pass">
            <input type="password" name="ccontraseña" placeholder="Confirma contraseña" class="repass">
            <input type="submit" name="registra" class="submit" value="REGISTRARSE"><br>
@@ -92,7 +92,7 @@ if(isset($_POST['registra'])){
        </div>
      </div>
 <footer>
-          | <a href="index.php">Inicio</a> | Illescas Velázquez Raúl | Gonzalez Muñoz José Sebastian | Solis Lagunes Oscar Saul | &copy;1952 SOMER S.A. de C.V.
+          | <a href="index.php">Inicio</a> | &copy;1952 SOMER S.A. de C.V.
 		</footer>
 </body>
 </html>

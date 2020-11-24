@@ -18,11 +18,11 @@
          <button onclick="location.href='login.php'" >Clic Aquí</button>
          <h2>Registrarse</h2>
          <button onclick="location.href='signup.php'">Clic Aquí</button>
-       </div>  
+       </div>
        </div>
      </div>
      <footer>
-          | <a href="index.php">Inicio</a> | Illescas Velázquez Raúl | Gonzalez Muñoz José Sebastian | Solis Lagunes Oscar Saul | &copy;1952 SOMER S.A. de C.V.
+          | <a href="index.php">Inicio</a> | &copy;1952 SOMER S.A. de C.V.
     </footer>
 </body>
 </html>
