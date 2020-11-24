@@ -82,7 +82,7 @@ if(isset($_POST['registra'])){
 					 <input type="text" name="localidad" placeholder="Ingresa tu localidad" class="localidad">
 					 <input type="text" name="provincia" placeholder="Ingresa tu provincia" class="provincia">
 					 <input type="text" name="pais" placeholder="Ingresa tu pais" class="pais">
-					 <input type="submit" name="foto" placeholder="Ingresa una foto para tu perfil" class="imagen">
+					 <input type="submit" name="foto" value="Seleccionar Foto" class="submit">
            <input type="password" name="contraseña" placeholder="Ingresa contraseña" class="pass">
            <input type="password" name="ccontraseña" placeholder="Confirma contraseña" class="repass">
            <input type="submit" name="registra" class="submit" value="REGISTRARSE"><br>
