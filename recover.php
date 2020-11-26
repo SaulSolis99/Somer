@@ -23,37 +23,21 @@ if(isset($_POST['inicia'])){
     echo '<script language="javascript">alert("Por favor complete todos los campos");</script>';
   }
 }
-
+include_once("header.php");
 
  ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagenes/somer.ico" />
-  <title>Recuperar Contraseña</title>
-</head>
-<body>
-<header> <a href="index.php">CALZADO SOLIS</a></header>
+ <script src='https://www.google.com/recaptcha/api.js'></script>
    <div class="container">
      <div class="login-container">
        <div class="register">
-         <h2>Recuperar Contraseña</h2>
+         <h2 align="center">Recuperar Contraseña</h2>
          <form action="login.php" method="POST">
            <input type="text" name="correo" placeholder="Ingresa correo" class="correo">
            <input type="text" name="cuenta" placeholder="Ingresa cuenta" class="cuenta">
+           <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div><br><br>
            <input type="submit" name="Recuperar" class="submit" value="RECUPERAR"><br>
          </form>
        </div>
        </div>
      </div>
-     <footer>
-          | <a href="index.html">Inicio</a> | &copy;1952 SOMER S.A. de C.V.
-    </footer>
-</body>
-</html>
+<?php include_once("footer.php"); ?>

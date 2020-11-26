@@ -50,31 +50,29 @@ if(isset($_POST['registra'])){
 	}else{
 		echo '<script language="javascript">alert("Por favor complete todos los campos");</script>';
 	}
-
+include_once("header.php");
  ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="Imagenes/somer.ico" />
-  <title> Registrarse</title>
-
-</head>
-<body>
-	<header> <a href="index.php">CALZADO SOLIS</a></header>
-   <div class="container">
-		 <div class="login-image">
-		 	<div class="register">
-		 		<p>hola aqui ira la imagen</p>
+   <div class="container2">
+		 <div class="lado">
+		 <div class="signup-image">
+		 	<div class="login-container">
+				<div class="register">
+					<h2 align="center">Registrar Usuario</h2>
+					<img src="Imagenes/profile.png" alt="perfil" height="250px" width="230px" align="center">
+					<form action="signup.php" method="POST">
+						<form action="upload.php" method="post" enctype="multipart/form-data">
+			 			<input type="file" name="image"/>
+			 			<input type="submit" class=submit name="imagen" value="SUBIR FOTO"/>
+	 			</form>
+					</form>
+				</div>
 		 	</div>
 		 </div>
+		 </div>
+		 <div class="lado">
      <div class="signup-container">
        <div class="register">
-         <h2>Registrarse</h2>
          <form action="signup.php" method="POST">
 					 <input type="text" name="cuenta" placeholder="Ingresa tu cuenta" class="cuenta">
            <input type="text" name="nombre" placeholder="Ingresa tu nombre(s)" class="nombre">
@@ -89,17 +87,16 @@ if(isset($_POST['registra'])){
 					 <input type="text" name="localidad" placeholder="Ingresa tu localidad" class="localidad">
 					 <input type="text" name="provincia" placeholder="Ingresa tu provincia" class="provincia">
 					 <input type="text" name="pais" placeholder="Ingresa tu pais" class="pais">
-					 <input type="submit" name="foto" value="Seleccionar Foto" class="submit">
            <input type="password" name="contraseña" placeholder="Ingresa contraseña" class="pass">
            <input type="password" name="ccontraseña" placeholder="Confirma contraseña" class="repass">
-           <input type="submit" name="registra" class="submit" value="REGISTRARSE"><br>
-             <a href="login.php"> ¿Ya estas registrado? Inicia sesion aqui</a>
+           <input type="submit" name="registra" class="submit" value="REGISTRAR"><br>
+             <a href="login.php"> ¿Ya estas registrado? Inicia sesion aqui</a><br><br>
          </form>
        </div>
        </div>
+		 </div>
      </div>
-<footer>
-          | <a href="index.html">Inicio</a> | &copy;1952 SOMER S.A. de C.V.
-		</footer>
-</body>
-</html>
+
+<?php
+include_once("footer.php");
+?>
