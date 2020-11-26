@@ -67,7 +67,12 @@ if(isset($_POST['registra'])){
 <body>
 	<header> <a href="index.php">CALZADO SOLIS</a></header>
    <div class="container">
-     <div class="login-container">
+		 <div class="login-image">
+		 	<div class="register">
+		 		<p>hola aqui ira la imagen</p>
+		 	</div>
+		 </div>
+     <div class="signup-container">
        <div class="register">
          <h2>Registrarse</h2>
          <form action="signup.php" method="POST">
@@ -94,7 +99,7 @@ if(isset($_POST['registra'])){
        </div>
      </div>
 <footer>
-          | <a href="index.php">Inicio</a> | &copy;1952 SOMER S.A. de C.V.
+          | <a href="index.html">Inicio</a> | &copy;1952 SOMER S.A. de C.V.
 		</footer>
 </body>
 </html>
