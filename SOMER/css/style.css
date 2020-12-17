@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    <link rel="shortcut icon" href="Imagenes/somer.ico" />
+  }
+
+  body{
+    position: relative;
+     z-index:0;
+    background:#527752;
+    //background-image: url("Imagenes/fondo.jpg");
+    background-size:100%;
+  }
+
+  footer{
+  font-size: 75%;
+  padding: 10px 10px 10px 10px;
+  background-color:#00391e;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+header {
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color:#00391e;
+}
+
+header a{
+text-decoration:none;
+font-size: 175%;
+  color: #FFFFFF;
+}
+
+p{
+  color: #FFFFFF;
+}
+textarea{
+  width:100%;
+}
+
+  .container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .container2{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .signup-container{
+    display: flex;
+    width:auto;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 0px solid #000000;
+    /*overflow:hidden;
+    overflow-y: scroll;
+    float: right;*/
+  }
+  .mail-container{
+    display: flex;
+    width:auto;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 0px solid #000000;
+}
+  .lado{
+    width: auto;
+    height: 1046px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .login-container{
+    display: flex;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 0px solid #000000;
+  }
+
+  .signup-image{
+    display: flex;
+    width: 80%;
+    height: 45%;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 0px solid #000000;
+    float: right;
+    vertical-align: top;
+  }
+
+  .register, .login{
+    flex: 1;
+  }
+
+  .register{
+    padding: 40px;
+    position: relative;
+  }
+
+  .register h2{
+    color: #797979;
+    margin-bottom: 30px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .register input{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid #A8A8A8;
+    color: #333;
+  }
+
+  .register input:active,
+  .register input:focus{
+    outline: none;
+  }
+
+  .register .submit{
+    width: auto;
+    padding: 10px;
+    background: #DDDDDD;
+    color: #127A4A;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 35%;
+    border-radius: 27px 27px 27px 27px;
+    -moz-border-radius: 27px 27px 27px 27px;
+    -webkit-border-radius: 27px 27px 27px 27px;
+    border: 0px solid #000000;
+
+  }
+
+.register .submit:hover{
+   background: #127A4A;
+    color: #FFFFFF;
+}
+
+button{
+    width: auto;
+    padding: 10px;
+    background: #DDDDDD;
+    color: #127A4A;
+    font-size: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 27px 27px 27px 27px;
+    -moz-border-radius: 27px 27px 27px 27px;
+    -webkit-border-radius: 27px 27px 27px 27px;
+    border: 0px solid #000000;
+
+  }
+
+  button:hover{
+   background: #127A4A;
+    color: #FFFFFF;
+}
+
+#scroll{
+        border:1px solid;
+        height:100px;
+        width:300px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+
+div.tables{
+width:80%;
+height:80%;
+}
+
+    }
